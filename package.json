@@ -10,7 +10,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d dist"
-
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
