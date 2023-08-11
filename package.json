@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Y4xx.github.io/Yassine-oujama-portfolio",
+  "homepage": "https://Y4xx.github.io/test-portfolio",
   "name": "personal-portfolio-2",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
