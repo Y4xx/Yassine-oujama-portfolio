@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { projectExperience, WhatDoIHelp } from '../../utils/data'
 import css from './Experties.module.scss'
 import {motion} from 'framer-motion'
@@ -22,7 +24,9 @@ const Experties = () => {
                     projectExperience.map((exp, i)=> {
                         return <motion.div variants = {fadeIn("right", "tween", (i+1)*0.2, 1)} className={css.exp} key={i}>
                             <div style={{background: exp.bg}} className="flexCenter">
-                                <exp.icon size={25} color="white"/>
+                                {/* <exp.icon size={25} color="white"/> */}
+                                {/* {exp.icon}   */}
+                                <div dangerouslySetInnerHTML={{ __html: exp.icon }} />
                             </div>
                             <div>
                                 <span>{exp.name}</span>
